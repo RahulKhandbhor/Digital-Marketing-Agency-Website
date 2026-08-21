@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - DigitalPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Digital<span>Pro</span></div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Digital Marketing Blog</h1>
+    <p>Insights, strategies and latest digital marketing trends.</p>
+</section>
+
+<section class="section">
+
+    <input
+        type="text"
+        id="blogSearch"
+        class="search-box"
+        placeholder="Search blog articles..."
+        onkeyup="searchBlogs()"
+    >
+
+    <div class="blog-grid">
+
+        <article class="blog-card">
+            <div class="blog-image">SEO</div>
+            <div class="blog-content">
+                <small>SEO • 2026</small>
+                <h3>10 Ways to Improve Your SEO</h3>
+                <p>
+                    Learn practical strategies to improve your
+                    website's organic search visibility.
+                </p>
+                <button onclick="readBlog('SEO Article')">
+                    Read Article
+                </button>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <div class="blog-image">PPC</div>
+            <div class="blog-content">
+                <small>PPC • 2026</small>
+                <h3>How to Create Better PPC Campaigns</h3>
+                <p>
+                    Discover techniques for improving paid
+                    advertising performance.
+                </p>
+                <button onclick="readBlog('PPC Article')">
+                    Read Article
+                </button>
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <div class="blog-image">Social</div>
+            <div class="blog-content">
+                <small>Social Media • 2026</small>
+                <h3>Social Media Marketing Trends</h3>
+                <p>
+                    Explore strategies businesses can use to
+                    increase social media engagement.
+                </p>
+                <button onclick="readBlog('Social Media Article')">
+                    Read Article
+                </button>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; <span id="year"></span> DigitalPro. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
